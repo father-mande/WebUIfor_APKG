@@ -1,0 +1,37 @@
+{
+   "general":{
+      "package":"WebUIfor%NAME%",
+      "name":"WebUIfor%NAME%",
+      "version":"%VER%",
+      "depends":[
+        "scriptserver(>=1.17)",
+	"%DEPENDS%"
+      ],
+      "conflicts":[],
+      "developer":"Father_Mande",
+      "maintainer":"Father_Mande",
+      "email":"father_mande@hotmail.com",
+      "website":"",
+      "architecture":"%ARCH%",
+      "firmware":"4.0"
+   },
+   "adm-desktop": {
+      "privilege": {
+         "accessible": "users",
+         "customizable": true
+      },
+      "app": {
+         "type": "webserver"
+      }
+   },
+   "register":{
+      "boot-priority":{
+         "start-order":55,
+         "stop-order":15
+      },
+      "prerequisites":{
+         "enable-service":[],
+         "restart-service":[]
+      }
+   }
+}

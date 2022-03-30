@@ -1,0 +1,18 @@
+{
+  "name": "Manage_x11vnc_option_xrandr",
+  "script_path": "/usr/local/bin/vnc_mngt",
+  "description": "Manage OPTION for x11vnc : xrandr (xrandr = support xrandr screen capabilities)",
+  "allowed_users": [
+    "x11vnc"
+  ],
+  "group": "vnc_Mngt",
+  "parameters": [
+	{
+      "name": "Action",
+      "required": true,
+      "type": "list",
+      "description": "Enable or Disable (default) option : xrandr (screen capabilities)",
+      "values": [ "enable_xrandr", "disable_xrandr" ]
+      }
+  ]
+ }

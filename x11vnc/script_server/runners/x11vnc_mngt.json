@@ -1,0 +1,18 @@
+{
+  "name": "Manage_x11vnc_APKG",
+  "script_path": "/usr/local/bin/vnc_mngt",
+  "description": "Manage x11vnc APKG (start|stop|restart|status|conf(display config))",
+  "allowed_users": [
+    "x11vnc"
+  ],
+  "group": "vnc_Mngt",
+  "parameters": [
+	{
+      "name": "Action",
+      "required": true,
+      "type": "list",
+      "description": "Enter the ACTION you want to do",
+      "values": [ "status", "start", "stop", "restart", "conf" ]
+      }
+  ]
+ }

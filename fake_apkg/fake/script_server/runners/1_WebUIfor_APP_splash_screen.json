@@ -1,0 +1,22 @@
+{
+  "name": "1_WebUIfor_myHD_%APP%_splash_screen",
+  "script_path": "/usr/local/AppCentral/WebUIfor%APP%/CONTROL/start-stop.sh",
+  "description": "Splash-Screen (before login) for WebUIfor%APP%\ncan be enabled (on the default at delivery) or\ncan be disabled (off) to have direct access to login form of script-server",
+  "allowed_users": [
+    "%APP%"
+  ],
+  "output_format": "terminal",
+  "parameters": [
+    {
+      "name": "splash",
+      "required": true,
+      "type": "list",
+      "default": "set_splash_on",
+      "description": "Please select to Enable or Disable splash screen for WebUIfor%APP%",
+      "values": [
+        "set_splash_on",
+        "set_splash_off"
+      ]
+    }
+  ]
+}

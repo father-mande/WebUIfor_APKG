@@ -1,0 +1,18 @@
+{
+  "name": "Manage_x11vnc_option_many",
+  "script_path": "/usr/local/bin/vnc_mngt",
+  "description": "Manage OPTION for x11vnc : many = multiples users sharing screen",
+  "allowed_users": [
+    "x11vnc"
+  ],
+  "group": "vnc_Mngt",
+  "parameters": [
+	{
+      "name": "Action",
+      "required": true,
+      "type": "list",
+      "description": "Enable (default) or Disable  option : multiples users sharing screen",
+      "values": [ "enable_many", "disable_many" ]
+      }
+  ]
+ }

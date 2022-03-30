@@ -1,0 +1,24 @@
+{
+  "name": "Manage_x11vnc_change_vnc_port",
+  "script_path": "/usr/local/bin/vnc_mngt",
+  "description": "Change VNC port ... 5900 is the default",
+  "allowed_users": [
+    "x11vnc"
+  ],
+  "group": "vnc_Mngt",
+  "parameters": [
+	 {
+      "name": "Action",
+      "default": "port",
+      "constant": true
+      },
+	{
+      "name": "port",
+      "required": true,
+      "type": "int",
+	  "default": "5900",
+      "description": "Value for port used by x11vnc 5900+",
+      "min": "5900"
+      }
+  ]
+ }
