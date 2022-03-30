@@ -31,6 +31,8 @@ VERSION = 1.0
 ... ... generated APKG name is : WebUIforXXXX (XXXX is the target APKG name)
 ... ... ex. if target is x11vnc APKG for script server management is : WebUIforx11vnc
 
+**Run** : ./generateWebUIfor.sh APKG_NAME
+
 When APKG is created, install it manually as usual, if you uninstall it, json scripts are removed, if target APKG and / or scriptserver APKG are removed, WebUIfor{targetAPKG} is also removed.
 
 Good Luck.
