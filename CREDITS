@@ -1,0 +1,15 @@
+####
+script-server is the port without change on Asustor of the Github project :
+https://github.com/bugy/script-server
+thanks to bugy : buggygm@gmail.com
+
+DejaVuSerif-Bold.ttf is a copy from Ubuntu 20.04
+
+apkg-tools.py is proprietary of Asustor use to create APKG
+https://developer.asustor.com/
+
+apkg_webui.png is get from an original, free icon modified by me, sorry don't remember the source, but original (without text other than "www" top rigth) come from an free icon web site ???
+
+ALL the others (shell, x11vnc prapartion & scripts, fake_apkg struture) had been built by me.
+
+Philippe.
