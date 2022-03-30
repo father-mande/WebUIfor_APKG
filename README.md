@@ -35,5 +35,10 @@ VERSION = 1.0
 
 When APKG is created, install it manually as usual, if you uninstall it, json scripts are removed, if target APKG and / or scriptserver APKG are removed, WebUIfor{targetAPKG} is also removed.
 
-Good Luck.
+If you need to personalize the start-stop.sh script to add some actions before starting of WebUIforXXXX or just before stopping it.  
+you can add in **bin** folder shell script named :  
+**before_start.sh** ... executed at end of start of the APKG  
+**before_stop.sh** ... executed at end of stop of the APKG
+
+Good Luck.  
 Philippe.
