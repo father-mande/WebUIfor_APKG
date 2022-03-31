@@ -1,5 +1,7 @@
 <html>
 <head>
 <META HTTP-EQUIV="refresh" CONTENT="0;URL=%HTTP%://%MYIP%:%MYPORT%/">
+<meta http-equiv="Cache-control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
 </head>
 </html>

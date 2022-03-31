@@ -1,6 +1,8 @@
 <html>
 <head>
 <META HTTP-EQUIV="refresh" CONTENT="5;URL=%HTTP%://%MYIP%:%MYPORT%/">
+<meta http-equiv="Cache-control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
 <title>myhd user for script-server</title>
 <style type="text/css">
 .auto-style1 {
