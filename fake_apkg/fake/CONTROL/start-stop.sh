@@ -79,7 +79,7 @@ add_user_in_sc_if_needed(){
 start_daemon () {
     [ -e "$rcP" ] || ln -s ${APKG_PATH}/CONTROL/start-stop.sh $rcP 
 	# test if SC run
-	/bin/ps -eaf | grep -v grep | grep -q "scriptserver/python3_venv/bin/python3 launcher.py"
+	/bin/ps -eaf | grep -v grep | grep "/usr/local/AppCentral/scriptserver" | grep -q "launcher.py"
 	if [ $? -eq 0 ] ; then
 		add_user_in_sc_if_needed
 		link_runners
