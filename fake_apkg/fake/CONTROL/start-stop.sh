@@ -79,7 +79,7 @@ add_user_in_sc_if_needed(){
 start_daemon () {
     [ -e "$rcP" ] || ln -s ${APKG_PATH}/CONTROL/start-stop.sh $rcP 
 	# test if SC run
-	/bin/ps -eaf | grep -v grep | grep -q "scriptserver/python3.7_venv/bin/python3 launcher.py"
+	/bin/ps -eaf | grep -v grep | grep -q "scriptserver/python3_venv/bin/python3 launcher.py"
 	if [ $? -eq 0 ] ; then
 		add_user_in_sc_if_needed
 		link_runners
@@ -88,7 +88,7 @@ start_daemon () {
 			${APKG_PATH}/bin/before_start.sh ${APP}
 		fi
 	else
-		usr/sbin/syslog -g 0 -l 2 --user admin --event "Script-server is not running, WebUIfor${APP} can't start ??? "
+		/usr/sbin/syslog -g 0 -l 2 --user admin --event "Script-server is not running, WebUIfor${APP} can't start ??? "
 	fi
 }
 
@@ -119,6 +119,9 @@ case "$1" in
         ;;
     debug)
         ;;
+	relink_json)
+		link_runners
+		;;
 	set_splash_off)
 		if [ ! -e ${APKG_PATH}/.nosplash ] ; then
 			touch ${APKG_PATH}/.nosplash
@@ -135,7 +138,8 @@ case "$1" in
 		;;
     *)
         echo "Usage: $0 {start|stop|restart}"
-		echo "Usage: $0 {set_splash_on,set_splash_off}"
+		echo "Usage: $0 {set_splash_on,set_splash_off} ... access to Script-Server via splash screen or directly"
+		echo "Usage: $0 {relink_json} ... in case relink APKG json script in SC (case SC faill when starting"
         exit 2
         ;;
 esac

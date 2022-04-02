@@ -3,7 +3,7 @@ This tool is to create an APKG for your script-server scripts, for managing anot
 
 **Requirements** :  
 ... **scriptserver** APKG >= 1.17  
-... **target_apkg** APKG (version checkk is possible)
+... **target_apkg** APKG (version check is possible)
   
 **Methodology** :  
 ... first create your scripts and optional shell(s) called by your scripts  
@@ -39,6 +39,8 @@ If you need to personalize the start-stop.sh script to add some actions before s
 you can add in **bin** folder shell script named :  
 **before_start.sh** ... executed at end of start of the APKG  
 **before_stop.sh** ... executed at end of stop of the APKG
+
+By default, when you click on generated icon in A.D.M. webUI, a splash screen is displayed to remember you user name for script-server and default password (if not changed by you) before redirecting you to script-server login page. This splash screen can be removed, to have a direct access to screen-server login page 
 
 Good Luck.  
 Philippe.
