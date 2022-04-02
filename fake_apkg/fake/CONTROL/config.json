@@ -4,7 +4,7 @@
       "name":"WebUIfor%NAME%",
       "version":"%VER%",
       "depends":[
-        "scriptserver(>=1.17)",
+        "scriptserver(>=1.17.3)",
 	"%DEPENDS%"
       ],
       "conflicts":[],
