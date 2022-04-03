@@ -22,7 +22,7 @@ VERSION = 1.0
 \# VERSION default is 1.0  
 \# Optional  
 \# DEPENDS = target_apkg_name(>=0.93)  
-\# DEPENDS default is target_apkg_name only without version verification
+\# DEPENDS default is target_apkg_name only without version verification  
 \# SCUSER = user_name  
 \# SCUSER default is target_apkg_name**
 
